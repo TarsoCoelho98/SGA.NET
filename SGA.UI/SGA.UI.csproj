@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,22 +50,191 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmConfiguracao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfiguracao.Designer.cs">
+      <DependentUpon>frmConfiguracao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmContrato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmContrato.Designer.cs">
+      <DependentUpon>frmContrato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFluxoCaixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFluxoCaixa.Designer.cs">
+      <DependentUpon>frmFluxoCaixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInsertCasa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInsertCasa.Designer.cs">
+      <DependentUpon>frmInsertCasa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInsertLocatario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInsertLocatario.Designer.cs">
+      <DependentUpon>frmInsertLocatario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInsertQuarto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInsertQuarto.Designer.cs">
+      <DependentUpon>frmInsertQuarto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoad.Designer.cs">
+      <DependentUpon>frmLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmRegistrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistrar.Designer.cs">
+      <DependentUpon>frmRegistrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateCasa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateCasa.Designer.cs">
+      <DependentUpon>frmUpdateCasa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateLocatario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateLocatario.Designer.cs">
+      <DependentUpon>frmUpdateLocatario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateQuarto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateQuarto.Designer.cs">
+      <DependentUpon>frmUpdateQuarto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="frmUpdateUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateUsuario.Designer.cs">
+      <DependentUpon>frmUpdateUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\ucContrato.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\ucContrato.Designer.cs">
+      <DependentUpon>ucContrato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\ucInsertLocatario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\ucInsertLocatario.Designer.cs">
+      <DependentUpon>ucInsertLocatario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\ucInsertQuarto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\ucInsertQuarto.Designer.cs">
+      <DependentUpon>ucInsertQuarto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\ucQueryLocatario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\ucQueryLocatario.Designer.cs">
+      <DependentUpon>ucQueryLocatario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\ucQueryQuarto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\ucQueryQuarto.Designer.cs">
+      <DependentUpon>ucQueryQuarto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\ucInsertCasa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\ucInsertCasa.Designer.cs">
+      <DependentUpon>ucInsertCasa.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC\ucQueryCasa.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UC\ucQueryCasa.Designer.cs">
       <DependentUpon>ucQueryCasa.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC\ucUpdateCasa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\ucUpdateCasa.Designer.cs">
+      <DependentUpon>ucUpdateCasa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\ucUpdateLocatario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\ucUpdateLocatario.Designer.cs">
+      <DependentUpon>ucUpdateLocatario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\ucUpdateQuarto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\ucUpdateQuarto.Designer.cs">
+      <DependentUpon>ucUpdateQuarto.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmConfiguracao.resx">
+      <DependentUpon>frmConfiguracao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmContrato.resx">
+      <DependentUpon>frmContrato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFluxoCaixa.resx">
+      <DependentUpon>frmFluxoCaixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInsertCasa.resx">
+      <DependentUpon>frmInsertCasa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInsertLocatario.resx">
+      <DependentUpon>frmInsertLocatario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInsertQuarto.resx">
+      <DependentUpon>frmInsertQuarto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoad.resx">
+      <DependentUpon>frmLoad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistrar.resx">
+      <DependentUpon>frmRegistrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateCasa.resx">
+      <DependentUpon>frmUpdateCasa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateLocatario.resx">
+      <DependentUpon>frmUpdateLocatario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateQuarto.resx">
+      <DependentUpon>frmUpdateQuarto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -71,11 +244,46 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="frmUpdateUsuario.resx">
+      <DependentUpon>frmUpdateUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\ucContrato.resx">
+      <DependentUpon>ucContrato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\ucInsertCasa.resx">
+      <DependentUpon>ucInsertCasa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\ucInsertLocatario.resx">
+      <DependentUpon>ucInsertLocatario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\ucInsertQuarto.resx">
+      <DependentUpon>ucInsertQuarto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UC\ucQueryCasa.resx">
       <DependentUpon>ucQueryCasa.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UC\ucQueryLocatario.resx">
+      <DependentUpon>ucQueryLocatario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\ucQueryQuarto.resx">
+      <DependentUpon>ucQueryQuarto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\ucUpdateCasa.resx">
+      <DependentUpon>ucUpdateCasa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\ucUpdateLocatario.resx">
+      <DependentUpon>ucUpdateLocatario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\ucUpdateQuarto.resx">
+      <DependentUpon>ucUpdateQuarto.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\DataSources\SGA.DAL.Entity.Casa.datasource" />
+    <None Include="Properties\DataSources\SGA.DAL.Entity.Casa1.datasource" />
+    <None Include="Properties\DataSources\SGA.DAL.Entity.Locatario.datasource" />
+    <None Include="Properties\DataSources\SGA.DAL.Entity.Quarto.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -100,6 +308,21 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\brandon-griggs-wR11KBaB86U-unsplash.jpg" />
+    <None Include="Resources\desfocada.jpg" />
+    <None Include="Resources\SGA_LOGIN_4.png" />
+    <None Include="Resources\iconfinder_Locked_Cell_Door_128415.png" />
+    <None Include="Resources\iconfinder_Login_73221.png" />
+    <None Include="Resources\iconfinder_Login_73221.ico" />
+    <None Include="Resources\iconfinder_home__house__key__2992200.png" />
+    <None Include="Resources\kisspng-microsoft-word-office-open-xml-document-computer-i-word-file-icon-5ab06a4fe9e182.970236431521510991958.png" />
+    <None Include="Resources\kisspng-microsoft-word-office-open-xml-document-computer-i-word-file-icon-5ab06a4fe9e182.9702364315215109919581.png" />
+    <Content Include="Email_HTML\EmailBemVindo.html" />
+    <Content Include="Email_HTML\EmailCobranca.html" />
+    <Content Include="Email_HTML\EmailParabens.html" />
+    <Content Include="Email_HTML\EmailVerificacao.html">
+      <CustomToolNamespace>Email_HTML</CustomToolNamespace>
+    </Content>
     <Content Include="Resource\ICO\add.ico" />
     <Content Include="Resource\ICO\clear.ico" />
     <Content Include="Resource\ICO\delete.ico" />
@@ -113,9 +336,11 @@
     <Content Include="Resource\PNG\iconfinder_flat_icons-graficheria.it-08_281097.png" />
     <Content Include="Resource\PNG\iconfinder_magnifyingglass_1055031.png" />
     <Content Include="Resource\PNG\iconfinder_system-search_118797.png" />
+    <Content Include="Resource\PNG\image-3033200_1280.jpg" />
     <Content Include="Resource\PNG\login.png" />
     <Content Include="Resource\PNG\logo.png" />
     <Content Include="Resource\PNG\logon.png" />
+    <Content Include="Resource\PNG\residence-3663528_1920.jpg" />
     <Content Include="Resource\PNG\tamanhocerto.png" />
   </ItemGroup>
   <ItemGroup />

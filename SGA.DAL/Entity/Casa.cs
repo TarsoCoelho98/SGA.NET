@@ -12,7 +12,8 @@ namespace SGA.DAL.Entity
         public string Rua { get; set; }
         public string Bairro { get; set; }
         public int Numero { get; set; }
-        public int CEP { get; set; }
+        public string CEP { get; set; }
         public string Observacao { get; set; }
+        public string Cidade { get; set; }
     }
 }

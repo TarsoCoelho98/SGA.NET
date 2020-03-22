@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using SGA.DAL.Entity;
 using SGA.DAL.Facade;
+using SGA.DAL;
 
 namespace SGA.BLL
 {
@@ -13,26 +14,26 @@ namespace SGA.BLL
     {
         #region CRUD
 
-        public static void Insert(Casa casa)
+        public static void Insert(string rua, string bairro, int numero, long cep, string observacao, string cidade)
         {
-            CasaFacade.Insert(casa.Rua, casa.Bairro, casa.Numero, casa.CEP, casa.Observacao);
+            CasaFacade.Insert(rua, bairro, numero, cep, observacao, cidade);
         }
 
-        public static void Delete(Casa casa)
+        public static void Delete(int idReferencia)
         {
-            CasaFacade.Delete(casa.IdCasa);
+            CasaFacade.Delete(idReferencia);
         }
 
-        public static void Update(Casa casaNovo)
+        public static void Update(int idReferencia, string novoRua, string novoBairro, string novoNumero, string novoCep, string novoObservacao, string cidade)
         {
-            CasaFacade.Update(casaNovo.IdCasa, casaNovo.Rua, casaNovo.Bairro, casaNovo.Numero, casaNovo.CEP, casaNovo.Observacao);
+            CasaFacade.Update(idReferencia, novoRua, novoBairro, novoNumero, novoCep, novoObservacao, cidade);
         }
 
-        public static List<Casa> QueryAll(int id, string rua, string bairro, int cep)
+        public static List<Casa> QueryAll(string id, string cidade, string bairro, string cep)
         {
-            return CasaFacade.QueryAll(id, rua, bairro, cep);
+            return CasaFacade.QueryAll(id, cidade, bairro, cep);
         }
 
-        #endregion       
+        #endregion        
     }
 }

@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using SGA.DAL.Entity;
+using SGA.DAL.Enums;
 using SGA.DAL.Facade;
+using SGA.DAL;
+using System.Globalization;
 
 namespace SGA.BLL
 {
@@ -10,27 +13,26 @@ namespace SGA.BLL
     {
         #region CRUD
 
-        public static void Insert(Quarto quarto)
+        public static void Insert(string vlAluguel, string vlCalcao, string fkCasa, string status, string observacao)
         {
-            QuartoFacade.Insert(quarto.VlAluguel, quarto.VlCalcao, quarto.FkCasa,
-                                quarto.Status, quarto.Observacao);
+            QuartoFacade.Insert(vlAluguel, vlCalcao, fkCasa, status, observacao);
         }
 
-        public static void Delete(Quarto quarto)
+        public static void Delete(int idReferencia)
         {
-            QuartoFacade.Delete(quarto.IdQuarto);
+            QuartoFacade.Delete(idReferencia);
         }
 
-        public static void Update(Quarto quartoNovo)
+        public static void Update(int idReferencia, string vlAluguel, string vlCalcao, string novoFkCasa, string novoStatus, string novoObservacao)
         {
-            QuartoFacade.Update(quartoNovo.IdQuarto, quartoNovo.VlAluguel, quartoNovo.VlCalcao,
-                                quartoNovo.FkCasa, quartoNovo.Status, quartoNovo.Observacao);
+            QuartoFacade.Update(idReferencia, vlAluguel, vlCalcao, novoFkCasa, novoStatus, novoObservacao);
         }
 
-        public static List<Quarto> QueryAll(Quarto quarto)
+        public static List<Quarto> QueryAll(string idQuarto, string vlAluguel, string vlCalcao, string fkCasa, string status)
         {
-            return QuartoFacade.QueryAll(quarto.IdQuarto, quarto.VlAluguel, quarto.VlCalcao, quarto.FkCasa, quarto.Status);
+            return QuartoFacade.QueryAll(idQuarto, vlAluguel, vlCalcao, fkCasa, status);
         }
+
         #endregion        
     }
 }

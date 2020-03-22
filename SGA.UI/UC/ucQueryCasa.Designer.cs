@@ -29,355 +29,430 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.pnlDesign = new System.Windows.Forms.Panel();
-            this.lblQueryLocatario = new System.Windows.Forms.Label();
-            this.gbFiltro = new System.Windows.Forms.GroupBox();
-            this.mtbId = new System.Windows.Forms.MaskedTextBox();
-            this.mtbBairro = new System.Windows.Forms.MaskedTextBox();
-            this.mtbRua = new System.Windows.Forms.MaskedTextBox();
-            this.mtbCep = new System.Windows.Forms.MaskedTextBox();
-            this.lblCep = new System.Windows.Forms.Label();
-            this.lblBairro = new System.Windows.Forms.Label();
-            this.lblRua = new System.Windows.Forms.Label();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblId = new System.Windows.Forms.Label();
+            this.lblCidade = new System.Windows.Forms.Label();
+            this.lblBairro = new System.Windows.Forms.Label();
+            this.lblCEP = new System.Windows.Forms.Label();
+            this.mtbCEP = new System.Windows.Forms.MaskedTextBox();
+            this.mtbCidade = new System.Windows.Forms.MaskedTextBox();
+            this.mtbBairro = new System.Windows.Forms.MaskedTextBox();
+            this.mtbId = new System.Windows.Forms.MaskedTextBox();
+            this.gbFiltro = new System.Windows.Forms.GroupBox();
             this.btnClear = new System.Windows.Forms.Button();
-            this.dgvCasa = new System.Windows.Forms.DataGridView();
             this.btnSearch = new System.Windows.Forms.Button();
-            this.Editar = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Excluir = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.idCasaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ruaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bairroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.numeroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cEPDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.observacaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.casaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.lblQuantidade = new System.Windows.Forms.Label();
+            this.lblCount = new System.Windows.Forms.Label();
+            this.dgvCasa = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.columnEditar = new System.Windows.Forms.DataGridViewLinkColumn();
+            this.columnRemover = new System.Windows.Forms.DataGridViewLinkColumn();
+            this.casaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.btnExcel = new System.Windows.Forms.Button();
             this.gbFiltro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCasa)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.casaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.casaBindingSource1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pnlDesign
-            // 
-            this.pnlDesign.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlDesign.BackColor = System.Drawing.SystemColors.ControlText;
-            this.pnlDesign.Location = new System.Drawing.Point(3, 29);
-            this.pnlDesign.Name = "pnlDesign";
-            this.pnlDesign.Size = new System.Drawing.Size(689, 1);
-            this.pnlDesign.TabIndex = 0;
-            // 
-            // lblQueryLocatario
-            // 
-            this.lblQueryLocatario.AutoSize = true;
-            this.lblQueryLocatario.BackColor = System.Drawing.Color.Maroon;
-            this.lblQueryLocatario.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
-            this.lblQueryLocatario.ForeColor = System.Drawing.Color.White;
-            this.lblQueryLocatario.Location = new System.Drawing.Point(3, 2);
-            this.lblQueryLocatario.Name = "lblQueryLocatario";
-            this.lblQueryLocatario.Size = new System.Drawing.Size(151, 23);
-            this.lblQueryLocatario.TabIndex = 1;
-            this.lblQueryLocatario.Text = "Consulta de Casas";
-            // 
-            // gbFiltro
-            // 
-            this.gbFiltro.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.gbFiltro.Controls.Add(this.mtbId);
-            this.gbFiltro.Controls.Add(this.mtbBairro);
-            this.gbFiltro.Controls.Add(this.mtbRua);
-            this.gbFiltro.Controls.Add(this.mtbCep);
-            this.gbFiltro.Controls.Add(this.lblCep);
-            this.gbFiltro.Controls.Add(this.lblBairro);
-            this.gbFiltro.Controls.Add(this.lblRua);
-            this.gbFiltro.Controls.Add(this.lblId);
-            this.gbFiltro.Font = new System.Drawing.Font("Calibri", 9F);
-            this.gbFiltro.Location = new System.Drawing.Point(5, 35);
-            this.gbFiltro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.gbFiltro.Name = "gbFiltro";
-            this.gbFiltro.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.gbFiltro.Size = new System.Drawing.Size(607, 55);
-            this.gbFiltro.TabIndex = 2;
-            this.gbFiltro.TabStop = false;
-            this.gbFiltro.Text = "Filtro";
-            // 
-            // mtbId
-            // 
-            this.mtbId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.mtbId.Location = new System.Drawing.Point(55, 18);
-            this.mtbId.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.mtbId.Mask = "0000000";
-            this.mtbId.Name = "mtbId";
-            this.mtbId.Size = new System.Drawing.Size(31, 22);
-            this.mtbId.TabIndex = 10;
-            this.mtbId.ValidatingType = typeof(int);
-            // 
-            // mtbBairro
-            // 
-            this.mtbBairro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.mtbBairro.Location = new System.Drawing.Point(147, 18);
-            this.mtbBairro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.mtbBairro.Name = "mtbBairro";
-            this.mtbBairro.Size = new System.Drawing.Size(139, 22);
-            this.mtbBairro.TabIndex = 9;
-            // 
-            // mtbRua
-            // 
-            this.mtbRua.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.mtbRua.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.mtbRua.Location = new System.Drawing.Point(336, 18);
-            this.mtbRua.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.mtbRua.Name = "mtbRua";
-            this.mtbRua.Size = new System.Drawing.Size(136, 22);
-            this.mtbRua.TabIndex = 8;
-            // 
-            // mtbCep
-            // 
-            this.mtbCep.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.mtbCep.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.mtbCep.Location = new System.Drawing.Point(531, 18);
-            this.mtbCep.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.mtbCep.Mask = "00000-000";
-            this.mtbCep.Name = "mtbCep";
-            this.mtbCep.Size = new System.Drawing.Size(58, 22);
-            this.mtbCep.TabIndex = 5;
-            // 
-            // lblCep
-            // 
-            this.lblCep.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblCep.AutoSize = true;
-            this.lblCep.Location = new System.Drawing.Point(502, 20);
-            this.lblCep.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblCep.Name = "lblCep";
-            this.lblCep.Size = new System.Drawing.Size(25, 14);
-            this.lblCep.TabIndex = 5;
-            this.lblCep.Text = "CEP";
-            // 
-            // lblBairro
-            // 
-            this.lblBairro.AutoSize = true;
-            this.lblBairro.Location = new System.Drawing.Point(107, 21);
-            this.lblBairro.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblBairro.Name = "lblBairro";
-            this.lblBairro.Size = new System.Drawing.Size(40, 14);
-            this.lblBairro.TabIndex = 4;
-            this.lblBairro.Text = "Bairro";
-            // 
-            // lblRua
-            // 
-            this.lblRua.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblRua.AutoSize = true;
-            this.lblRua.Location = new System.Drawing.Point(304, 20);
-            this.lblRua.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblRua.Name = "lblRua";
-            this.lblRua.Size = new System.Drawing.Size(28, 14);
-            this.lblRua.TabIndex = 1;
-            this.lblRua.Text = "Rua";
             // 
             // lblId
             // 
             this.lblId.AutoSize = true;
-            this.lblId.Location = new System.Drawing.Point(7, 20);
+            this.lblId.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblId.ForeColor = System.Drawing.Color.Black;
+            this.lblId.Location = new System.Drawing.Point(7, 25);
             this.lblId.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblId.Name = "lblId";
             this.lblId.Size = new System.Drawing.Size(44, 14);
             this.lblId.TabIndex = 0;
             this.lblId.Text = "Código";
             // 
+            // lblCidade
+            // 
+            this.lblCidade.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCidade.AutoSize = true;
+            this.lblCidade.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCidade.ForeColor = System.Drawing.Color.Black;
+            this.lblCidade.Location = new System.Drawing.Point(111, 25);
+            this.lblCidade.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCidade.Name = "lblCidade";
+            this.lblCidade.Size = new System.Drawing.Size(45, 14);
+            this.lblCidade.TabIndex = 1;
+            this.lblCidade.Text = "Cidade";
+            // 
+            // lblBairro
+            // 
+            this.lblBairro.AutoSize = true;
+            this.lblBairro.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBairro.ForeColor = System.Drawing.Color.Black;
+            this.lblBairro.Location = new System.Drawing.Point(344, 27);
+            this.lblBairro.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblBairro.Name = "lblBairro";
+            this.lblBairro.Size = new System.Drawing.Size(40, 14);
+            this.lblBairro.TabIndex = 4;
+            this.lblBairro.Text = "Bairro";
+            // 
+            // lblCEP
+            // 
+            this.lblCEP.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCEP.AutoSize = true;
+            this.lblCEP.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCEP.ForeColor = System.Drawing.Color.Black;
+            this.lblCEP.Location = new System.Drawing.Point(557, 25);
+            this.lblCEP.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCEP.Name = "lblCEP";
+            this.lblCEP.Size = new System.Drawing.Size(25, 14);
+            this.lblCEP.TabIndex = 5;
+            this.lblCEP.Text = "CEP";
+            // 
+            // mtbCEP
+            // 
+            this.mtbCEP.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.mtbCEP.BackColor = System.Drawing.SystemColors.Control;
+            this.mtbCEP.Font = new System.Drawing.Font("Calibri", 9F);
+            this.mtbCEP.Location = new System.Drawing.Point(586, 22);
+            this.mtbCEP.Margin = new System.Windows.Forms.Padding(2);
+            this.mtbCEP.Mask = "00000-000";
+            this.mtbCEP.Name = "mtbCEP";
+            this.mtbCEP.Size = new System.Drawing.Size(58, 22);
+            this.mtbCEP.TabIndex = 4;
+            this.mtbCEP.Tag = "";
+            // 
+            // mtbCidade
+            // 
+            this.mtbCidade.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.mtbCidade.BackColor = System.Drawing.SystemColors.Control;
+            this.mtbCidade.Font = new System.Drawing.Font("Calibri", 9F);
+            this.mtbCidade.Location = new System.Drawing.Point(161, 22);
+            this.mtbCidade.Margin = new System.Windows.Forms.Padding(2);
+            this.mtbCidade.Name = "mtbCidade";
+            this.mtbCidade.Size = new System.Drawing.Size(179, 22);
+            this.mtbCidade.TabIndex = 2;
+            this.mtbCidade.Tag = "";
+            // 
+            // mtbBairro
+            // 
+            this.mtbBairro.BackColor = System.Drawing.SystemColors.Control;
+            this.mtbBairro.Font = new System.Drawing.Font("Calibri", 9F);
+            this.mtbBairro.Location = new System.Drawing.Point(388, 22);
+            this.mtbBairro.Margin = new System.Windows.Forms.Padding(2);
+            this.mtbBairro.Name = "mtbBairro";
+            this.mtbBairro.Size = new System.Drawing.Size(157, 22);
+            this.mtbBairro.TabIndex = 3;
+            this.mtbBairro.Tag = "";
+            // 
+            // mtbId
+            // 
+            this.mtbId.BackColor = System.Drawing.SystemColors.Control;
+            this.mtbId.Font = new System.Drawing.Font("Calibri", 9F);
+            this.mtbId.Location = new System.Drawing.Point(55, 22);
+            this.mtbId.Margin = new System.Windows.Forms.Padding(2);
+            this.mtbId.Mask = "00000000";
+            this.mtbId.Name = "mtbId";
+            this.mtbId.Size = new System.Drawing.Size(31, 22);
+            this.mtbId.TabIndex = 1;
+            this.mtbId.Tag = "";
+            this.mtbId.ValidatingType = typeof(int);
+            // 
+            // gbFiltro
+            // 
+            this.gbFiltro.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gbFiltro.BackColor = System.Drawing.Color.White;
+            this.gbFiltro.Controls.Add(this.mtbId);
+            this.gbFiltro.Controls.Add(this.mtbBairro);
+            this.gbFiltro.Controls.Add(this.mtbCidade);
+            this.gbFiltro.Controls.Add(this.mtbCEP);
+            this.gbFiltro.Controls.Add(this.lblCEP);
+            this.gbFiltro.Controls.Add(this.lblBairro);
+            this.gbFiltro.Controls.Add(this.lblCidade);
+            this.gbFiltro.Controls.Add(this.lblId);
+            this.gbFiltro.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbFiltro.ForeColor = System.Drawing.Color.Black;
+            this.gbFiltro.Location = new System.Drawing.Point(11, 6);
+            this.gbFiltro.Margin = new System.Windows.Forms.Padding(2);
+            this.gbFiltro.Name = "gbFiltro";
+            this.gbFiltro.Padding = new System.Windows.Forms.Padding(2);
+            this.gbFiltro.Size = new System.Drawing.Size(669, 60);
+            this.gbFiltro.TabIndex = 2;
+            this.gbFiltro.TabStop = false;
+            this.gbFiltro.Text = " Filtro ";
+            // 
             // btnClear
             // 
             this.btnClear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClear.BackColor = System.Drawing.SystemColors.Control;
+            this.btnClear.BackColor = System.Drawing.SystemColors.Window;
             this.btnClear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClear.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClear.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnClear.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnClear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnClear.Font = new System.Drawing.Font("Calibri", 9F);
             this.btnClear.ForeColor = System.Drawing.Color.Black;
-            this.btnClear.Location = new System.Drawing.Point(616, 41);
-            this.btnClear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnClear.Location = new System.Drawing.Point(643, 391);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(2);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(71, 22);
+            this.btnClear.Size = new System.Drawing.Size(71, 23);
             this.btnClear.TabIndex = 3;
+            this.btnClear.TabStop = false;
             this.btnClear.Text = "Limpar";
             this.btnClear.UseVisualStyleBackColor = false;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSearch.BackColor = System.Drawing.SystemColors.Window;
+            this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSearch.Font = new System.Drawing.Font("Calibri", 9F);
+            this.btnSearch.ForeColor = System.Drawing.Color.Black;
+            this.btnSearch.Location = new System.Drawing.Point(718, 392);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(71, 23);
+            this.btnSearch.TabIndex = 6;
+            this.btnSearch.TabStop = false;
+            this.btnSearch.Text = "Pesquisar";
+            this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click_1);
+            // 
+            // lblQuantidade
+            // 
+            this.lblQuantidade.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblQuantidade.AutoSize = true;
+            this.lblQuantidade.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblQuantidade.Location = new System.Drawing.Point(10, 395);
+            this.lblQuantidade.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblQuantidade.Name = "lblQuantidade";
+            this.lblQuantidade.Size = new System.Drawing.Size(40, 15);
+            this.lblQuantidade.TabIndex = 11;
+            this.lblQuantidade.Text = "Total: ";
+            // 
+            // lblCount
+            // 
+            this.lblCount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblCount.AutoSize = true;
+            this.lblCount.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCount.Location = new System.Drawing.Point(43, 395);
+            this.lblCount.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCount.Name = "lblCount";
+            this.lblCount.Size = new System.Drawing.Size(0, 14);
+            this.lblCount.TabIndex = 12;
             // 
             // dgvCasa
             // 
             this.dgvCasa.AllowUserToAddRows = false;
             this.dgvCasa.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Beige;
-            this.dgvCasa.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvCasa.AllowUserToResizeColumns = false;
+            this.dgvCasa.AllowUserToResizeRows = false;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.DarkGray;
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            this.dgvCasa.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.dgvCasa.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvCasa.AutoGenerateColumns = false;
-            this.dgvCasa.BackgroundColor = System.Drawing.Color.White;
+            this.dgvCasa.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvCasa.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvCasa.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvCasa.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Calibri", 9F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCasa.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvCasa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCasa.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idCasaDataGridViewTextBoxColumn,
-            this.ruaDataGridViewTextBoxColumn,
-            this.bairroDataGridViewTextBoxColumn,
-            this.numeroDataGridViewTextBoxColumn,
-            this.cEPDataGridViewTextBoxColumn,
-            this.observacaoDataGridViewTextBoxColumn,
-            this.Editar,
-            this.Excluir});
-            this.dgvCasa.DataSource = this.casaBindingSource;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Calibri", 9F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Chocolate;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvCasa.DefaultCellStyle = dataGridViewCellStyle5;
-            this.dgvCasa.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dgvCasa.Location = new System.Drawing.Point(0, 100);
-            this.dgvCasa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridViewTextBoxColumn1,
+            this.Cidade,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.columnEditar,
+            this.columnRemover});
+            this.dgvCasa.DataSource = this.casaBindingSource1;
+            this.dgvCasa.EnableHeadersVisualStyles = false;
+            this.dgvCasa.GridColor = System.Drawing.SystemColors.Control;
+            this.dgvCasa.Location = new System.Drawing.Point(11, 83);
+            this.dgvCasa.MultiSelect = false;
             this.dgvCasa.Name = "dgvCasa";
             this.dgvCasa.ReadOnly = true;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.Bisque;
-            this.dgvCasa.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            this.dgvCasa.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.ControlDark;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Calibri", 9F);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCasa.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            this.dgvCasa.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.dgvCasa.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.dgvCasa.Size = new System.Drawing.Size(694, 297);
-            this.dgvCasa.TabIndex = 5;
+            this.dgvCasa.Size = new System.Drawing.Size(778, 294);
+            this.dgvCasa.TabIndex = 7;
+            this.dgvCasa.TabStop = false;
+            this.dgvCasa.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCasa_CellContentClick);
             // 
-            // btnSearch
+            // dataGridViewTextBoxColumn1
             // 
-            this.btnSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSearch.BackColor = System.Drawing.SystemColors.Control;
-            this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearch.Font = new System.Drawing.Font("Calibri", 9F);
-            this.btnSearch.ForeColor = System.Drawing.Color.Black;
-            this.btnSearch.Location = new System.Drawing.Point(616, 68);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(71, 22);
-            this.btnSearch.TabIndex = 6;
-            this.btnSearch.Text = "Pesquisar";
-            this.btnSearch.UseVisualStyleBackColor = false;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click_1);
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "IdCasa";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Codigo";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
             // 
-            // Editar
+            // Cidade
             // 
-            this.Editar.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Editar.DataPropertyName = "Observacao";
-            this.Editar.HeaderText = "Editar";
-            this.Editar.Name = "Editar";
-            this.Editar.ReadOnly = true;
-            this.Editar.Text = "Editar Item";
+            this.Cidade.DataPropertyName = "Cidade";
+            this.Cidade.HeaderText = "Cidade";
+            this.Cidade.Name = "Cidade";
+            this.Cidade.ReadOnly = true;
             // 
-            // Excluir
+            // dataGridViewTextBoxColumn3
             // 
-            this.Excluir.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Excluir.DataPropertyName = "Observacao";
-            this.Excluir.HeaderText = "Excluir";
-            this.Excluir.Name = "Excluir";
-            this.Excluir.ReadOnly = true;
-            this.Excluir.Text = "Excluir Item";
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Bairro";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Bairro";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
             // 
-            // idCasaDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn2
             // 
-            this.idCasaDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.idCasaDataGridViewTextBoxColumn.DataPropertyName = "IdCasa";
-            this.idCasaDataGridViewTextBoxColumn.HeaderText = "Casa";
-            this.idCasaDataGridViewTextBoxColumn.Name = "idCasaDataGridViewTextBoxColumn";
-            this.idCasaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Rua";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Rua";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
-            // ruaDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn4
             // 
-            this.ruaDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ruaDataGridViewTextBoxColumn.DataPropertyName = "Rua";
-            this.ruaDataGridViewTextBoxColumn.HeaderText = "Rua";
-            this.ruaDataGridViewTextBoxColumn.Name = "ruaDataGridViewTextBoxColumn";
-            this.ruaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Numero";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Número";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
             // 
-            // bairroDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn5
             // 
-            this.bairroDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.bairroDataGridViewTextBoxColumn.DataPropertyName = "Bairro";
-            this.bairroDataGridViewTextBoxColumn.HeaderText = "Bairro";
-            this.bairroDataGridViewTextBoxColumn.Name = "bairroDataGridViewTextBoxColumn";
-            this.bairroDataGridViewTextBoxColumn.ReadOnly = true;
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "CEP";
+            this.dataGridViewTextBoxColumn5.HeaderText = "CEP";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
             // 
-            // numeroDataGridViewTextBoxColumn
+            // columnEditar
             // 
-            this.numeroDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.numeroDataGridViewTextBoxColumn.DataPropertyName = "Numero";
-            this.numeroDataGridViewTextBoxColumn.HeaderText = "Número";
-            this.numeroDataGridViewTextBoxColumn.Name = "numeroDataGridViewTextBoxColumn";
-            this.numeroDataGridViewTextBoxColumn.ReadOnly = true;
+            this.columnEditar.ActiveLinkColor = System.Drawing.Color.DarkRed;
+            this.columnEditar.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.columnEditar.HeaderText = "Editar";
+            this.columnEditar.Name = "columnEditar";
+            this.columnEditar.ReadOnly = true;
+            this.columnEditar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.columnEditar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.columnEditar.Text = "Editar";
+            this.columnEditar.UseColumnTextForLinkValue = true;
             // 
-            // cEPDataGridViewTextBoxColumn
+            // columnRemover
             // 
-            this.cEPDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.cEPDataGridViewTextBoxColumn.DataPropertyName = "CEP";
-            this.cEPDataGridViewTextBoxColumn.HeaderText = "CEP";
-            this.cEPDataGridViewTextBoxColumn.Name = "cEPDataGridViewTextBoxColumn";
-            this.cEPDataGridViewTextBoxColumn.ReadOnly = true;
+            this.columnRemover.ActiveLinkColor = System.Drawing.Color.DarkRed;
+            this.columnRemover.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.columnRemover.HeaderText = "Remover";
+            this.columnRemover.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.columnRemover.Name = "columnRemover";
+            this.columnRemover.ReadOnly = true;
+            this.columnRemover.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.columnRemover.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.columnRemover.Text = "Remover";
+            this.columnRemover.UseColumnTextForLinkValue = true;
             // 
-            // observacaoDataGridViewTextBoxColumn
+            // casaBindingSource1
             // 
-            this.observacaoDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.observacaoDataGridViewTextBoxColumn.DataPropertyName = "Observacao";
-            this.observacaoDataGridViewTextBoxColumn.HeaderText = "Observação";
-            this.observacaoDataGridViewTextBoxColumn.Name = "observacaoDataGridViewTextBoxColumn";
-            this.observacaoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.casaBindingSource1.DataSource = typeof(SGA.DAL.Entity.Casa);
             // 
-            // casaBindingSource
+            // btnExcel
             // 
-            this.casaBindingSource.DataSource = typeof(SGA.DAL.Entity.Casa);
+            this.btnExcel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExcel.BackColor = System.Drawing.SystemColors.Window;
+            this.btnExcel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnExcel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExcel.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnExcel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnExcel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnExcel.Font = new System.Drawing.Font("Calibri", 9F);
+            this.btnExcel.ForeColor = System.Drawing.Color.Black;
+            this.btnExcel.Location = new System.Drawing.Point(568, 391);
+            this.btnExcel.Margin = new System.Windows.Forms.Padding(2);
+            this.btnExcel.Name = "btnExcel";
+            this.btnExcel.Size = new System.Drawing.Size(71, 23);
+            this.btnExcel.TabIndex = 13;
+            this.btnExcel.TabStop = false;
+            this.btnExcel.Text = "Excel";
+            this.btnExcel.UseVisualStyleBackColor = false;
+            this.btnExcel.Click += new System.EventHandler(this.btnExcel_Click);
             // 
             // ucQueryCasa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.btnExcel);
+            this.Controls.Add(this.lblCount);
+            this.Controls.Add(this.lblQuantidade);
             this.Controls.Add(this.dgvCasa);
+            this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.gbFiltro);
-            this.Controls.Add(this.lblQueryLocatario);
-            this.Controls.Add(this.pnlDesign);
             this.Font = new System.Drawing.Font("Calibri", 9F);
             this.Name = "ucQueryCasa";
-            this.Size = new System.Drawing.Size(694, 397);
+            this.Size = new System.Drawing.Size(802, 425);
             this.gbFiltro.ResumeLayout(false);
             this.gbFiltro.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCasa)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.casaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.casaBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel pnlDesign;
-        private System.Windows.Forms.Label lblQueryLocatario;
-        private System.Windows.Forms.GroupBox gbFiltro;
         private System.Windows.Forms.Label lblId;
-        private System.Windows.Forms.Label lblRua;
-        private System.Windows.Forms.Label lblCep;
+        private System.Windows.Forms.Label lblCidade;
         private System.Windows.Forms.Label lblBairro;
-        private System.Windows.Forms.Button btnClear;
-        private System.Windows.Forms.MaskedTextBox mtbId;
+        private System.Windows.Forms.Label lblCEP;
+        private System.Windows.Forms.MaskedTextBox mtbCEP;
+        private System.Windows.Forms.MaskedTextBox mtbCidade;
         private System.Windows.Forms.MaskedTextBox mtbBairro;
-        private System.Windows.Forms.MaskedTextBox mtbRua;
-        private System.Windows.Forms.MaskedTextBox mtbCep;
-        private System.Windows.Forms.DataGridView dgvCasa;
-        private System.Windows.Forms.BindingSource casaBindingSource;
+        private System.Windows.Forms.MaskedTextBox mtbId;
+        private System.Windows.Forms.GroupBox gbFiltro;
+        private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.Label lblQuantidade;
+        private System.Windows.Forms.Label lblCount;
+        private System.Windows.Forms.DataGridView dgvCasa;
         private System.Windows.Forms.DataGridViewTextBoxColumn idCasaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ruaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn bairroDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn numeroDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cEPDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn observacaoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewButtonColumn Editar;
-        private System.Windows.Forms.DataGridViewButtonColumn Excluir;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cidade;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewLinkColumn columnEditar;
+        private System.Windows.Forms.DataGridViewLinkColumn columnRemover;
+        private System.Windows.Forms.BindingSource casaBindingSource1;
+        private System.Windows.Forms.Button btnExcel;
     }
 }
