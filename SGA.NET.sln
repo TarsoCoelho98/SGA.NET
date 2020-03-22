@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SGA.BLL", "SGA.BLL\SGA.BLL.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SGA.UI", "SGA.UI\SGA.UI.csproj", "{3891562D-A93E-4D61-9498-CAC15396DEFA}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Instalador_SGA", "Instalador\Instalador_SGA\Instalador_SGA.vdproj", "{3E6F0C35-ECFC-4F83-86EC-3C0256E190B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,8 @@ Global
 		{3891562D-A93E-4D61-9498-CAC15396DEFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3891562D-A93E-4D61-9498-CAC15396DEFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3891562D-A93E-4D61-9498-CAC15396DEFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E6F0C35-ECFC-4F83-86EC-3C0256E190B3}.Debug|Any CPU.ActiveCfg = Debug
+		{3E6F0C35-ECFC-4F83-86EC-3C0256E190B3}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
